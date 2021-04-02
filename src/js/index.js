@@ -6,12 +6,12 @@ import 'popper.js/dist/popper.min';
 import '@fortawesome/fontawesome-free/js/all.min.js';
 
 
-$(function() {
-    $(".thumbnail2").hover(function() {
-            $(this).find(".project-category").hide();
-            $(this).find(".caption2").slideDown(250);
-        },
-        function() {
+$(function () {
+    $(".thumbnail2").hover(function () {
+        $(this).find(".project-category").hide();
+        $(this).find(".caption2").slideDown(250);
+    },
+        function () {
             $(this).find(".caption2").slideUp();
             $(this).find(".project-category").show();
         }
@@ -59,7 +59,7 @@ $(function() {
             counter = 0;
 
         $('#show-next-image, #show-previous-image')
-            .click(function() {
+            .click(function () {
                 if ($(this)
                     .attr('id') === 'show-previous-image') {
                     current_image--;
@@ -83,14 +83,14 @@ $(function() {
 
         if (setIDs == true) {
             $('[data-image-id]')
-                .each(function() {
+                .each(function () {
                     counter++;
                     $(this)
                         .attr('data-image-id', counter);
                 });
         }
         $(setClickAttr)
-            .on('click', function() {
+            .on('click', function () {
                 updateGallery($(this));
             });
     }

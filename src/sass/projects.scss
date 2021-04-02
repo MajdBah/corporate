@@ -5,6 +5,7 @@
         position: 50% 10%;
         height: 250px;
     }
+
     .overlay {
         position: absolute;
         background-color: rgba(65, 155, 155, 0.5);
@@ -16,6 +17,7 @@
         align-items: center;
         justify-content: center;
     }
+
     .title1 {
         font-weight: bold;
         color: white;
@@ -32,6 +34,7 @@
         position: absolute;
         right: 25px;
         top: 20px;
+
         &:hover,
         &:focus {
             color: white;
@@ -43,6 +46,7 @@
 
 .btn,
 button {
+
     &:focus,
     &:active {
         outline: none !important;
